@@ -1,0 +1,2 @@
+export LUAJIT_LIB=`pkg-config --variable libdir luajit`
+export LUAJIT_INC=`pkg-config --variable includedir luajit`
