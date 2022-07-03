@@ -4,7 +4,7 @@
 #
 Name     : lua-nginx-module
 Version  : 0.10.21
-Release  : 26
+Release  : 27
 URL      : https://github.com/openresty/lua-nginx-module/archive/v0.10.21/lua-nginx-module-0.10.21.tar.gz
 Source0  : https://github.com/openresty/lua-nginx-module/archive/v0.10.21/lua-nginx-module-0.10.21.tar.gz
 Summary  : No detailed summary available
@@ -14,6 +14,7 @@ Requires: lua-nginx-module-lib = %{version}-%{release}
 BuildRequires : buildreq-nginx
 BuildRequires : openssl-dev
 BuildRequires : pkgconfig(luajit)
+Patch1: backport-bugfix-update-handling-of-multiple-headers-changed-i.patch
 
 %description
 <!---
@@ -32,6 +33,7 @@ lib components for the lua-nginx-module package.
 %prep
 %setup -q -n lua-nginx-module-0.10.21
 cd %{_builddir}/lua-nginx-module-0.10.21
+%patch1 -p1
 
 %build
 ## build_prepend content
