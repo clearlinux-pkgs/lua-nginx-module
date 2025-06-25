@@ -7,7 +7,7 @@
 #
 Name     : lua-nginx-module
 Version  : 0.10.27
-Release  : 84
+Release  : 85
 URL      : https://github.com/openresty/lua-nginx-module/archive/v0.10.27/lua-nginx-module-0.10.27.tar.gz
 Source0  : https://github.com/openresty/lua-nginx-module/archive/v0.10.27/lua-nginx-module-0.10.27.tar.gz
 Summary  : No detailed summary available
